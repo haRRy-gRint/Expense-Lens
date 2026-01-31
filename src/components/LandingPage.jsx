@@ -7,8 +7,11 @@ function LandingPage({ onGetStarted }) {
             <section className="hero-section">
                 <div className="hero-content fade-in-up">
                     <h1 className="hero-title">
-                        Master Your <span className="gradient-text">Financial Life</span>
+                        <span className="gradient-text">Cashvion</span>
                     </h1>
+                    <p className="hero-subtitle" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#4b5563', marginTop: '-10px' }}>
+                        Expense-Lens your finance buddy
+                    </p>
                     <p className="hero-subtitle">
                         Track expenses, set smart budgets, and secure your private spending in a vault only you can open.
                     </p>

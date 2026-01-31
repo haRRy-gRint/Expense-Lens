@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1 style={{ cursor: 'pointer' }} onClick={() => setViewType('landing')}>Expense-Lens</h1>
+        <h1 style={{ cursor: 'pointer' }} onClick={() => setViewType('landing')}>Cashvion</h1>
 
         {user && viewType === 'app' && (
           <div className="nav-bar">
