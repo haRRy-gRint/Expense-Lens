@@ -84,7 +84,7 @@ function AuthForm({ onLogin }) {
                 </div>
 
                 <button type="submit" disabled={loading} className="btn-primary full-width">
-                    {loading ? 'Please wait...' : (isLogin ? 'Login' : 'Register')}
+                    {loading ? 'Please wait...' : (isLogin ? 'Login' : 'Register (New)')}
                 </button>
             </form>
 
