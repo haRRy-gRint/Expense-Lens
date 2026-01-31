@@ -16,7 +16,8 @@ export default async function handler(req, res) {
             res.status(200).json({
                 status: 'OK',
                 message: 'Database connected and table "users" exists',
-                user_count: result.rows[0].count
+                user_count: result.rows[0].count,
+                debug_url_start: process.env.DATABASE_URL ? process.env.DATABASE_URL.substring(0, 15) + '...' : 'UNDEFINED'
             });
         } catch (queryErr) {
             client.release();
@@ -32,7 +33,8 @@ export default async function handler(req, res) {
         res.status(500).json({
             status: 'ERROR',
             message: 'Could not connect to database. Check DATABASE_URL.',
-            error: err.message
+            error: err.message,
+            debug_url_start: process.env.DATABASE_URL ? process.env.DATABASE_URL.substring(0, 15) + '...' : 'UNDEFINED'
         });
     }
 }
